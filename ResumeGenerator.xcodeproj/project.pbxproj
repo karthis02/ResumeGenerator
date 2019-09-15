@@ -14,6 +14,20 @@
 		69CEF6FB2328F7AC00F8A3B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CEF6F92328F7AC00F8A3B6 /* LaunchScreen.storyboard */; };
 		69CEF7062328F7AC00F8A3B6 /* ResumeGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CEF7052328F7AC00F8A3B6 /* ResumeGeneratorTests.swift */; };
 		69CEF7112328F7AC00F8A3B6 /* ResumeGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CEF7102328F7AC00F8A3B6 /* ResumeGeneratorUITests.swift */; };
+		C3EB780E232E19490023EC3D /* ServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB780D232E19490023EC3D /* ServiceHandler.swift */; };
+		C3EB7811232E1B330023EC3D /* ResumeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB780F232E1B330023EC3D /* ResumeInfoViewController.swift */; };
+		C3EB7812232E1B330023EC3D /* ResumeInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EB7810232E1B330023EC3D /* ResumeInfoViewController.xib */; };
+		C3EB7814232E1B710023EC3D /* ResumeInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7813232E1B710023EC3D /* ResumeInfoPresenter.swift */; };
+		C3EB7816232E1B8A0023EC3D /* ResumeInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7815232E1B8A0023EC3D /* ResumeInfoInteractor.swift */; };
+		C3EB7818232E1B9E0023EC3D /* ResumeInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7817232E1B9E0023EC3D /* ResumeInfoEntity.swift */; };
+		C3EB781A232E1BB20023EC3D /* ResumeInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7819232E1BB20023EC3D /* ResumeInfoRouter.swift */; };
+		C3EB781D232E1C430023EC3D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB781B232E1C430023EC3D /* HomeViewController.swift */; };
+		C3EB781E232E1C430023EC3D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EB781C232E1C430023EC3D /* HomeViewController.xib */; };
+		C3EB7820232E1C5C0023EC3D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB781F232E1C5C0023EC3D /* HomePresenter.swift */; };
+		C3EB7822232E1C710023EC3D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7821232E1C710023EC3D /* HomeInteractor.swift */; };
+		C3EB7824232E1C840023EC3D /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7823232E1C840023EC3D /* HomeEntity.swift */; };
+		C3EB7826232E1CBE0023EC3D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7825232E1CBE0023EC3D /* HomeRouter.swift */; };
+		C3EB7828232E1D200023EC3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7827232E1D200023EC3D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +61,20 @@
 		69CEF70C2328F7AC00F8A3B6 /* ResumeGeneratorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResumeGeneratorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CEF7102328F7AC00F8A3B6 /* ResumeGeneratorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeGeneratorUITests.swift; sourceTree = "<group>"; };
 		69CEF7122328F7AC00F8A3B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EB780D232E19490023EC3D /* ServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceHandler.swift; sourceTree = "<group>"; };
+		C3EB780F232E1B330023EC3D /* ResumeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInfoViewController.swift; sourceTree = "<group>"; };
+		C3EB7810232E1B330023EC3D /* ResumeInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResumeInfoViewController.xib; sourceTree = "<group>"; };
+		C3EB7813232E1B710023EC3D /* ResumeInfoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInfoPresenter.swift; sourceTree = "<group>"; };
+		C3EB7815232E1B8A0023EC3D /* ResumeInfoInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInfoInteractor.swift; sourceTree = "<group>"; };
+		C3EB7817232E1B9E0023EC3D /* ResumeInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInfoEntity.swift; sourceTree = "<group>"; };
+		C3EB7819232E1BB20023EC3D /* ResumeInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInfoRouter.swift; sourceTree = "<group>"; };
+		C3EB781B232E1C430023EC3D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C3EB781C232E1C430023EC3D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C3EB781F232E1C5C0023EC3D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		C3EB7821232E1C710023EC3D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		C3EB7823232E1C840023EC3D /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		C3EB7825232E1CBE0023EC3D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		C3EB7827232E1D200023EC3D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +125,10 @@
 		69CEF6EF2328F7AA00F8A3B6 /* ResumeGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				C3EB780C232E18EB0023EC3D /* Utilities */,
+				C3EB780B232E18C90023EC3D /* HttpHandler */,
+				C3EB7800232E16660023EC3D /* ResumeInfoView */,
+				C3EB77FF232E163D0023EC3D /* HomeView */,
 				69CEF6F02328F7AA00F8A3B6 /* AppDelegate.swift */,
 				69CEF6F22328F7AA00F8A3B6 /* ViewController.swift */,
 				69CEF6F42328F7AA00F8A3B6 /* Main.storyboard */,
@@ -123,6 +155,128 @@
 				69CEF7122328F7AC00F8A3B6 /* Info.plist */,
 			);
 			path = ResumeGeneratorUITests;
+			sourceTree = "<group>";
+		};
+		C3EB77FF232E163D0023EC3D /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7806232E17380023EC3D /* View */,
+				C3EB7808232E17560023EC3D /* Presenter */,
+				C3EB7807232E17440023EC3D /* Interactor */,
+				C3EB7809232E17630023EC3D /* Entity */,
+				C3EB780A232E176E0023EC3D /* Router */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		C3EB7800232E16660023EC3D /* ResumeInfoView */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7801232E16FA0023EC3D /* View */,
+				C3EB7802232E17000023EC3D /* Presenter */,
+				C3EB7803232E17080023EC3D /* Interactor */,
+				C3EB7804232E17130023EC3D /* Entity */,
+				C3EB7805232E171C0023EC3D /* Router */,
+			);
+			path = ResumeInfoView;
+			sourceTree = "<group>";
+		};
+		C3EB7801232E16FA0023EC3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB780F232E1B330023EC3D /* ResumeInfoViewController.swift */,
+				C3EB7810232E1B330023EC3D /* ResumeInfoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3EB7802232E17000023EC3D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7813232E1B710023EC3D /* ResumeInfoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C3EB7803232E17080023EC3D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7815232E1B8A0023EC3D /* ResumeInfoInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C3EB7804232E17130023EC3D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7817232E1B9E0023EC3D /* ResumeInfoEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C3EB7805232E171C0023EC3D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7819232E1BB20023EC3D /* ResumeInfoRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C3EB7806232E17380023EC3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB781B232E1C430023EC3D /* HomeViewController.swift */,
+				C3EB781C232E1C430023EC3D /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C3EB7807232E17440023EC3D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7821232E1C710023EC3D /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C3EB7808232E17560023EC3D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB781F232E1C5C0023EC3D /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C3EB7809232E17630023EC3D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7823232E1C840023EC3D /* HomeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C3EB780A232E176E0023EC3D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7825232E1CBE0023EC3D /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C3EB780B232E18C90023EC3D /* HttpHandler */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB780D232E19490023EC3D /* ServiceHandler.swift */,
+			);
+			path = HttpHandler;
+			sourceTree = "<group>";
+		};
+		C3EB780C232E18EB0023EC3D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C3EB7827232E1D200023EC3D /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +384,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CEF6FB2328F7AC00F8A3B6 /* LaunchScreen.storyboard in Resources */,
+				C3EB7812232E1B330023EC3D /* ResumeInfoViewController.xib in Resources */,
+				C3EB781E232E1C430023EC3D /* HomeViewController.xib in Resources */,
 				69CEF6F82328F7AC00F8A3B6 /* Assets.xcassets in Resources */,
 				69CEF6F62328F7AA00F8A3B6 /* Main.storyboard in Resources */,
 			);
@@ -257,7 +413,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CEF6F32328F7AA00F8A3B6 /* ViewController.swift in Sources */,
+				C3EB7824232E1C840023EC3D /* HomeEntity.swift in Sources */,
+				C3EB7822232E1C710023EC3D /* HomeInteractor.swift in Sources */,
+				C3EB7811232E1B330023EC3D /* ResumeInfoViewController.swift in Sources */,
+				C3EB7814232E1B710023EC3D /* ResumeInfoPresenter.swift in Sources */,
+				C3EB7820232E1C5C0023EC3D /* HomePresenter.swift in Sources */,
+				C3EB7826232E1CBE0023EC3D /* HomeRouter.swift in Sources */,
+				C3EB7818232E1B9E0023EC3D /* ResumeInfoEntity.swift in Sources */,
+				C3EB780E232E19490023EC3D /* ServiceHandler.swift in Sources */,
+				C3EB781D232E1C430023EC3D /* HomeViewController.swift in Sources */,
 				69CEF6F12328F7AA00F8A3B6 /* AppDelegate.swift in Sources */,
+				C3EB7828232E1D200023EC3D /* Constants.swift in Sources */,
+				C3EB7816232E1B8A0023EC3D /* ResumeInfoInteractor.swift in Sources */,
+				C3EB781A232E1BB20023EC3D /* ResumeInfoRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
