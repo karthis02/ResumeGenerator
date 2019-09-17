@@ -7,3 +7,11 @@
 //
 
 import Foundation
+struct Constant {
+    let kHomeViewTitle = "Home"
+    let kCell = "Cell"
+    let kPersonalInformation = "Personal Information"
+    let kPlaceHolderArray = ["First Name", "Last Name", "Email Id", "Mobile Number","Address Line2", "Address Line2", "DOB (DD-MM-YYYY)", "Current Company", "Experience in Years", "Skill Set", "Primary Education Marks", "Secondary Education Marks", "Higher Education Marks"]
+    let kPreview = "Preview"
+    let kURL = "https://api.jsonbin.io/b/5d27724f0e09805769fec4da/1"
+}

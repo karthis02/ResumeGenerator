@@ -22,12 +22,14 @@
 		C3EB7818232E1B9E0023EC3D /* ResumeInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7817232E1B9E0023EC3D /* ResumeInfoEntity.swift */; };
 		C3EB781A232E1BB20023EC3D /* ResumeInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7819232E1BB20023EC3D /* ResumeInfoRouter.swift */; };
 		C3EB781D232E1C430023EC3D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB781B232E1C430023EC3D /* HomeViewController.swift */; };
-		C3EB781E232E1C430023EC3D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3EB781C232E1C430023EC3D /* HomeViewController.xib */; };
 		C3EB7820232E1C5C0023EC3D /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB781F232E1C5C0023EC3D /* HomePresenter.swift */; };
 		C3EB7822232E1C710023EC3D /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7821232E1C710023EC3D /* HomeInteractor.swift */; };
 		C3EB7824232E1C840023EC3D /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7823232E1C840023EC3D /* HomeEntity.swift */; };
 		C3EB7826232E1CBE0023EC3D /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7825232E1CBE0023EC3D /* HomeRouter.swift */; };
 		C3EB7828232E1D200023EC3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EB7827232E1D200023EC3D /* Constants.swift */; };
+		EDCBD3782330A6D200D78615 /* ResumeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCBD3772330A6D200D78615 /* ResumeDetailTableViewCell.swift */; };
+		EDCBD37C2330C00E00D78615 /* ResumeInfoProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCBD37B2330C00E00D78615 /* ResumeInfoProtocols.swift */; };
+		EDD53DAE232FB0FD00EDF589 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD53DAD232FB0FD00EDF589 /* HomeProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,12 +71,14 @@
 		C3EB7817232E1B9E0023EC3D /* ResumeInfoEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInfoEntity.swift; sourceTree = "<group>"; };
 		C3EB7819232E1BB20023EC3D /* ResumeInfoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInfoRouter.swift; sourceTree = "<group>"; };
 		C3EB781B232E1C430023EC3D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		C3EB781C232E1C430023EC3D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		C3EB781F232E1C5C0023EC3D /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		C3EB7821232E1C710023EC3D /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		C3EB7823232E1C840023EC3D /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		C3EB7825232E1CBE0023EC3D /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
 		C3EB7827232E1D200023EC3D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EDCBD3772330A6D200D78615 /* ResumeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeDetailTableViewCell.swift; sourceTree = "<group>"; };
+		EDCBD37B2330C00E00D78615 /* ResumeInfoProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInfoProtocols.swift; sourceTree = "<group>"; };
+		EDD53DAD232FB0FD00EDF589 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,7 @@
 				C3EB7807232E17440023EC3D /* Interactor */,
 				C3EB7809232E17630023EC3D /* Entity */,
 				C3EB780A232E176E0023EC3D /* Router */,
+				EDD53DAD232FB0FD00EDF589 /* HomeProtocols.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -177,6 +182,7 @@
 				C3EB7803232E17080023EC3D /* Interactor */,
 				C3EB7804232E17130023EC3D /* Entity */,
 				C3EB7805232E171C0023EC3D /* Router */,
+				EDCBD37B2330C00E00D78615 /* ResumeInfoProtocols.swift */,
 			);
 			path = ResumeInfoView;
 			sourceTree = "<group>";
@@ -186,6 +192,7 @@
 			children = (
 				C3EB780F232E1B330023EC3D /* ResumeInfoViewController.swift */,
 				C3EB7810232E1B330023EC3D /* ResumeInfoViewController.xib */,
+				EDCBD3772330A6D200D78615 /* ResumeDetailTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				C3EB781B232E1C430023EC3D /* HomeViewController.swift */,
-				C3EB781C232E1C430023EC3D /* HomeViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,7 +391,6 @@
 			files = (
 				69CEF6FB2328F7AC00F8A3B6 /* LaunchScreen.storyboard in Resources */,
 				C3EB7812232E1B330023EC3D /* ResumeInfoViewController.xib in Resources */,
-				C3EB781E232E1C430023EC3D /* HomeViewController.xib in Resources */,
 				69CEF6F82328F7AC00F8A3B6 /* Assets.xcassets in Resources */,
 				69CEF6F62328F7AA00F8A3B6 /* Main.storyboard in Resources */,
 			);
@@ -413,8 +418,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CEF6F32328F7AA00F8A3B6 /* ViewController.swift in Sources */,
+				EDCBD3782330A6D200D78615 /* ResumeDetailTableViewCell.swift in Sources */,
+				EDD53DAE232FB0FD00EDF589 /* HomeProtocols.swift in Sources */,
 				C3EB7824232E1C840023EC3D /* HomeEntity.swift in Sources */,
 				C3EB7822232E1C710023EC3D /* HomeInteractor.swift in Sources */,
+				EDCBD37C2330C00E00D78615 /* ResumeInfoProtocols.swift in Sources */,
 				C3EB7811232E1B330023EC3D /* ResumeInfoViewController.swift in Sources */,
 				C3EB7814232E1B710023EC3D /* ResumeInfoPresenter.swift in Sources */,
 				C3EB7820232E1C5C0023EC3D /* HomePresenter.swift in Sources */,

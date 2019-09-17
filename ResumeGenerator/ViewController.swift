@@ -10,11 +10,31 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var createNewResumeButton: UIButton!
+    @IBOutlet weak var editSavedResumeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.title = Constant().kHomeViewTitle
     }
 
 
+    @IBAction func createNewResumeButtonAction(_ sender: Any) {
+        self.pushToHomeView()
+    }
+    
+    @IBAction func editSavedResumeButtonAction(_ sender: Any) {
+        self.pushToHomeView()
+    }
+    
+    private func pushToHomeView(){
+        let homeViewController =  UIStoryboard.init(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "HomeVC") as? HomeViewController
+        let presenter = HomePresenter()
+        let router = HomeRouter(view:homeViewController!)
+        presenter.routerDelegate = router
+        homeViewController!.presenterDelegate = presenter
+        self.navigationController?.pushViewController(homeViewController!, animated:true)
+    }
 }
 

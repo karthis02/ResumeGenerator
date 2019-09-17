@@ -9,5 +9,12 @@
 import UIKit
 
 class HomePresenter: NSObject {
-
+     var routerDelegate: HomeRouterProtocol?
+}
+extension HomePresenter: HomePresenterProtocol {
+    func navigateToResumeInfo() {
+        routerDelegate?.pushToResumeInfo()
+    }
+    
+    
 }

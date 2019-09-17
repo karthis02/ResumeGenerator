@@ -9,5 +9,21 @@
 import UIKit
 
 class ResumeInfoRouter: NSObject {
-
+    let view:ResumeInfoViewController?
+    init(view:ResumeInfoViewController ) {
+        self.view = view
+    }
+    
+}
+extension ResumeInfoRouter: ResumeInfoRouterProtocol {
+ 
+    
+        // Push to Preview
+    func pushToPreviewPdfView(resumeInfoModel:ResumeInfo) {
+        //let previewViewController = PreviewViewController()
+        //previewViewController.invoiceInfo = personalModel
+        //view?.navigationController?.pushViewController(previewViewController, animated: true)
+    }
+        
+        
 }
