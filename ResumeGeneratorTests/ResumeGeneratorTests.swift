@@ -30,5 +30,38 @@ class ResumeGeneratorTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testResumeInfoView()  {
+        let resumeInfoViewController = ResumeInfoViewController()
+        //Fetch Data from  local
+        resumeInfoViewController.presenterDelegate?.getSavedData()
+        //Check if data is present in local data
+        XCTAssertNotNil(resumeInfoViewController.resumeInfoModel)
+        //Check if URL is working or not
+        testValidServiceCall()
+        //Check data fetched and parsed successfully
+        resumeInfoViewController.presenterDelegate?.getSavedData()
+        //Check if data is present From url
+        XCTAssertNotNil(resumeInfoViewController.resumeInfoModel)
+    }
+    
+    // Concurrency test
+    func testValidServiceCall() {
+        let promise = expectation(description: "success case")
+        let resumeWebServiceHandler = ServiceHandler()
+        guard let url = URL.init(string: Constant().kURL) else { return }
+        resumeWebServiceHandler.getResumeInfoFromServer(url: url, completion:({(data:ResumeInfo?, error:Error?) in
+            if let resumeInfo = data {
+                XCTAssertNotNil(resumeInfo)
+                promise.fulfill()
+            }else {
+                //No data saved in server
+                if let error = error{
+                    XCTFail("Error: \(error.localizedDescription)")
+                }
+            }}))
+        wait(for: [promise], timeout: 6)
+        
+    }
 
 }

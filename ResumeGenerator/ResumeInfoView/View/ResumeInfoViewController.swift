@@ -21,11 +21,13 @@ class ResumeInfoViewController: UIViewController {
         super.viewDidLoad()
         self.title = Constant().kPersonalInformation
         self.setUpNavigationBarItem()
+        spinner?.isHidden = true
         self.tableView?.tableFooterView = UIView()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
         if UserDefaults.standard.bool(forKey: "LocalData") == true {
+            spinner?.isHidden = false
             spinner?.startAnimating()
             presenterDelegate?.getSavedData()
         }
