@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69C164F62331FCB300AB1426 /* PDFViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C164F52331FCB300AB1426 /* PDFViewController.swift */; };
+		69C164F82331FCEF00AB1426 /* PDFComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C164F72331FCEF00AB1426 /* PDFComposer.swift */; };
+		69C164FA2331FD3D00AB1426 /* PDFPageRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C164F92331FD3D00AB1426 /* PDFPageRender.swift */; };
+		69C164FE2332068200AB1426 /* FirstLine.html in Resources */ = {isa = PBXBuildFile; fileRef = 69C164FB2332068200AB1426 /* FirstLine.html */; };
+		69C164FF2332068200AB1426 /* MainInfo.html in Resources */ = {isa = PBXBuildFile; fileRef = 69C164FC2332068200AB1426 /* MainInfo.html */; };
+		69C165002332068200AB1426 /* FinalLine.html in Resources */ = {isa = PBXBuildFile; fileRef = 69C164FD2332068200AB1426 /* FinalLine.html */; };
+		69C1650223322D4B00AB1426 /* Resume.json in Resources */ = {isa = PBXBuildFile; fileRef = 69C1650123322D4B00AB1426 /* Resume.json */; };
 		69CEF6F12328F7AA00F8A3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CEF6F02328F7AA00F8A3B6 /* AppDelegate.swift */; };
 		69CEF6F32328F7AA00F8A3B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CEF6F22328F7AA00F8A3B6 /* ViewController.swift */; };
 		69CEF6F62328F7AA00F8A3B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CEF6F42328F7AA00F8A3B6 /* Main.storyboard */; };
@@ -50,6 +57,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69C164F52331FCB300AB1426 /* PDFViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewController.swift; sourceTree = "<group>"; };
+		69C164F72331FCEF00AB1426 /* PDFComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFComposer.swift; sourceTree = "<group>"; };
+		69C164F92331FD3D00AB1426 /* PDFPageRender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPageRender.swift; sourceTree = "<group>"; };
+		69C164FB2332068200AB1426 /* FirstLine.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FirstLine.html; sourceTree = "<group>"; };
+		69C164FC2332068200AB1426 /* MainInfo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = MainInfo.html; sourceTree = "<group>"; };
+		69C164FD2332068200AB1426 /* FinalLine.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = FinalLine.html; sourceTree = "<group>"; };
+		69C1650123322D4B00AB1426 /* Resume.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Resume.json; sourceTree = "<group>"; };
 		69CEF6ED2328F7AA00F8A3B6 /* ResumeGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResumeGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CEF6F02328F7AA00F8A3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69CEF6F22328F7AA00F8A3B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +120,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69C164F42331FC7C00AB1426 /* PDFGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				69C164FD2332068200AB1426 /* FinalLine.html */,
+				69C164FB2332068200AB1426 /* FirstLine.html */,
+				69C164FC2332068200AB1426 /* MainInfo.html */,
+				69C164F52331FCB300AB1426 /* PDFViewController.swift */,
+				69C164F72331FCEF00AB1426 /* PDFComposer.swift */,
+				69C164F92331FD3D00AB1426 /* PDFPageRender.swift */,
+			);
+			path = PDFGenerator;
+			sourceTree = "<group>";
+		};
 		69CEF6E42328F7AA00F8A3B6 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +156,7 @@
 		69CEF6EF2328F7AA00F8A3B6 /* ResumeGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				69C164F42331FC7C00AB1426 /* PDFGenerator */,
 				C3EB780C232E18EB0023EC3D /* Utilities */,
 				C3EB780B232E18C90023EC3D /* HttpHandler */,
 				C3EB7800232E16660023EC3D /* ResumeInfoView */,
@@ -281,6 +309,7 @@
 			isa = PBXGroup;
 			children = (
 				C3EB7827232E1D200023EC3D /* Constants.swift */,
+				69C1650123322D4B00AB1426 /* Resume.json */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -389,10 +418,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69C164FF2332068200AB1426 /* MainInfo.html in Resources */,
+				69C165002332068200AB1426 /* FinalLine.html in Resources */,
 				69CEF6FB2328F7AC00F8A3B6 /* LaunchScreen.storyboard in Resources */,
 				C3EB7812232E1B330023EC3D /* ResumeInfoViewController.xib in Resources */,
+				69C1650223322D4B00AB1426 /* Resume.json in Resources */,
 				69CEF6F82328F7AC00F8A3B6 /* Assets.xcassets in Resources */,
 				69CEF6F62328F7AA00F8A3B6 /* Main.storyboard in Resources */,
+				69C164FE2332068200AB1426 /* FirstLine.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,11 +456,14 @@
 				C3EB7824232E1C840023EC3D /* HomeEntity.swift in Sources */,
 				C3EB7822232E1C710023EC3D /* HomeInteractor.swift in Sources */,
 				EDCBD37C2330C00E00D78615 /* ResumeInfoProtocols.swift in Sources */,
+				69C164F82331FCEF00AB1426 /* PDFComposer.swift in Sources */,
 				C3EB7811232E1B330023EC3D /* ResumeInfoViewController.swift in Sources */,
 				C3EB7814232E1B710023EC3D /* ResumeInfoPresenter.swift in Sources */,
 				C3EB7820232E1C5C0023EC3D /* HomePresenter.swift in Sources */,
+				69C164F62331FCB300AB1426 /* PDFViewController.swift in Sources */,
 				C3EB7826232E1CBE0023EC3D /* HomeRouter.swift in Sources */,
 				C3EB7818232E1B9E0023EC3D /* ResumeInfoEntity.swift in Sources */,
+				69C164FA2331FD3D00AB1426 /* PDFPageRender.swift in Sources */,
 				C3EB780E232E19490023EC3D /* ServiceHandler.swift in Sources */,
 				C3EB781D232E1C430023EC3D /* HomeViewController.swift in Sources */,
 				69CEF6F12328F7AA00F8A3B6 /* AppDelegate.swift in Sources */,

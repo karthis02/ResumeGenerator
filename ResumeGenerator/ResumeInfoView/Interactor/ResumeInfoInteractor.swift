@@ -18,7 +18,7 @@ class ResumeInfoInteractor: NSObject {
             let jsonData = try JSONEncoder().encode(fileName)
             let jsonString = String(data: jsonData, encoding: .utf8) ?? ""
             print(jsonString)
-            if let path = Bundle.main.path(forResource: "Profile", ofType: ".json") {
+            if let path = Bundle.main.path(forResource: "Resume", ofType: ".json") {
                 // and decode it back
                 let pathAsURL = URL(fileURLWithPath: path)
                 do {
@@ -36,7 +36,7 @@ class ResumeInfoInteractor: NSObject {
     //MARK: - Get Data From Local Json
     func getDataFromLocalJson() -> ResumeInfo? {
         
-        if let path = Bundle.main.path(forResource: "Profile", ofType: ".json") {
+        if let path = Bundle.main.path(forResource: "Resume", ofType: ".json") {
             // and decode it back
             let pathAsURL = URL(fileURLWithPath: path)
             do {
@@ -59,7 +59,7 @@ extension ResumeInfoInteractor: ResumeInfoInteractorProtocol {
         return getDataFromLocalJson()
     }
     
-    func getModelClass()  {
+    func getSavedData()  {
      
         //Fetch from server
         let serviceHandler = ServiceHandler()

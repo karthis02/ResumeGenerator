@@ -15,7 +15,8 @@ class ResumeInfoViewController: UIViewController {
     
     var presenterDelegate:ResumeInfoPresenter?
     let resumeFieldPlaceholderTextArray = Constant().kPlaceHolderArray
-    
+    var resumeInfoModel = ResumeInfo()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = Constant().kPersonalInformation
@@ -45,12 +46,11 @@ class ResumeInfoViewController: UIViewController {
         
     }
     
-    // MARK: - Save personal data locally.
+    // MARK: - Save Resume data locally.
     @objc func previewBarButtonAction() {
-        //presenterDelegate?.saveData(info: createPeronalInfoModel())
-        //presenterDelegate?.navigateToPersonal()
+        presenterDelegate?.saveData(info: resumeInfoModel)
+        presenterDelegate?.navigateToResumeInfo()
     }
-    
 
 }
 extension ResumeInfoViewController :UITableViewDelegate,UITableViewDataSource{
@@ -67,6 +67,7 @@ extension ResumeInfoViewController :UITableViewDelegate,UITableViewDataSource{
         let cell = self.tableView?.dequeueReusableCell(withIdentifier: "ResumeInfoCell", for: indexPath)
             as! ResumeDetailTableViewCell
         cell.detailTextField.placeholder = "\(self.resumeFieldPlaceholderTextArray[indexPath.row])"
+        cell.detailTextField.tag = indexPath.row
         return cell
     }
     
@@ -77,5 +78,41 @@ extension ResumeInfoViewController:UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range:NSRange, replacementString string: String) -> Bool {
+        
+        let kActualText = (textField.text ?? "") + string
+        switch textField.tag
+        {
+        case 0:
+            resumeInfoModel.firstName = kActualText;
+        case 1:
+            resumeInfoModel.lastName = kActualText;
+        case 2:
+            resumeInfoModel.emailId = kActualText;
+        case 3:
+            resumeInfoModel.mobileNumber = kActualText;
+        case 4:
+            resumeInfoModel.addressLine1 = kActualText;
+        case 5:
+            resumeInfoModel.addressLine2 = kActualText;
+        case 6:
+            resumeInfoModel.dob = kActualText;
+        case 7:
+            resumeInfoModel.currentCompany = kActualText;
+        case 8:
+            resumeInfoModel.yearOfExp = kActualText;
+        case 9:
+            resumeInfoModel.skillSet = kActualText;
+        case 10:
+            resumeInfoModel.primaryEducationMarks = kActualText;
+        case 11:
+            resumeInfoModel.secondaryEducationMarks = kActualText;
+        case 12:
+            resumeInfoModel.higherEducationMarks = kActualText;
+        default:
+            print("It is nothing");
+        }
+        return true;
     }
 }

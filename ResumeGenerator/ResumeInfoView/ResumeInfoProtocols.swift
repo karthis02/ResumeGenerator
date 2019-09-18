@@ -14,15 +14,15 @@ protocol ResumeInfoViewProtocol {
 }
 
 protocol ResumeInfoPresenterProtocol {
-    func navigateToPersonal()
-    func getModelClass()
+    func navigateToResumeInfo()
+    func getSavedData()
     func saveData(info:ResumeInfo)
     func loadViewWithData(info:ResumeInfo?)
 }
 
 protocol ResumeInfoInteractorProtocol {
     func saveData(info: ResumeInfo)
-    func getModelClass()
+    func getSavedData()
     func getDataFromLocalData() -> ResumeInfo?
 }
 

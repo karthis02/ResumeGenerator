@@ -114,10 +114,10 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-S0-gVe">
-                                                    <rect key="frame" x="15" y="0.0" width="360" height="50"/>
+                                                    <rect key="frame" x="15" y="0.0" width="360" height="49.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                                     <connections>
                                                         <outlet property="delegate" destination="IHK-5b-09X" id="YJG-wq-l8E"/>
                                                     </connections>

@@ -16,6 +16,7 @@ class ResumeInfoPresenter: NSObject {
 
 
 extension ResumeInfoPresenter: ResumeInfoPresenterProtocol {
+   
     func loadViewWithData(info: ResumeInfo?) {
         DispatchQueue.main.async {
             //self.view?.loadViewWithSavedorFetchedData(info: info)
@@ -27,14 +28,14 @@ extension ResumeInfoPresenter: ResumeInfoPresenterProtocol {
         interactorDelegate?.saveData(info: info)
     }
     
-    func navigateToPersonal() {
+    func navigateToResumeInfo() {
         if let resumeInfoModel = interactorDelegate?.getDataFromLocalData() {
             routerDelegate?.pushToPreviewPdfView(resumeInfoModel: resumeInfoModel)
         }
     }
     
-    func getModelClass()  {
-        interactorDelegate?.getModelClass()
+    func getSavedData()  {
+        interactorDelegate?.getSavedData()
     }
     
     

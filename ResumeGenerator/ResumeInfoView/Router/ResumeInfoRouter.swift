@@ -16,13 +16,11 @@ class ResumeInfoRouter: NSObject {
     
 }
 extension ResumeInfoRouter: ResumeInfoRouterProtocol {
- 
-    
-        // Push to Preview
+
     func pushToPreviewPdfView(resumeInfoModel:ResumeInfo) {
-        //let previewViewController = PreviewViewController()
-        //previewViewController.invoiceInfo = personalModel
-        //view?.navigationController?.pushViewController(previewViewController, animated: true)
+        let pdfViewController = PDFViewController()
+        pdfViewController.resumeInfo = resumeInfoModel
+        view?.navigationController?.pushViewController(pdfViewController, animated: true)
     }
         
         
