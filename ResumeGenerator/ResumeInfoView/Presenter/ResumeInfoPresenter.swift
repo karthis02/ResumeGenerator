@@ -19,7 +19,7 @@ extension ResumeInfoPresenter: ResumeInfoPresenterProtocol {
    
     func loadViewWithData(info: ResumeInfo?) {
         DispatchQueue.main.async {
-            //self.view?.loadViewWithSavedorFetchedData(info: info)
+            self.view?.loadViewWithSavedorFetchedData(info: info)
         }
         
     }

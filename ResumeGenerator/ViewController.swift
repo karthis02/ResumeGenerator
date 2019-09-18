@@ -21,10 +21,12 @@ class ViewController: UIViewController {
 
 
     @IBAction func createNewResumeButtonAction(_ sender: Any) {
+        UserDefaults.standard.set(false, forKey: "LocalData")
         self.pushToHomeView()
     }
     
     @IBAction func editSavedResumeButtonAction(_ sender: Any) {
+        UserDefaults.standard.set(true, forKey: "LocalData")
         self.pushToHomeView()
     }
     
